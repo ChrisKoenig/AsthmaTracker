@@ -74,6 +74,8 @@
                                             Text="History" />
             <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png"
                                             Text="Chart" />
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button3.png"
+                                            Text="Settings" />
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="MenuItem 1" />
                 <shell:ApplicationBarMenuItem Text="MenuItem 2" />

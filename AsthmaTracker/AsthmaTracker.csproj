@@ -87,7 +87,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\WholeNumberConverter.cs" />
-    <Compile Include="Helpers\WeatherHelper.cs" />
+    <Compile Include="Services\IWeatherServicer.cs" />
+    <Compile Include="Services\MockWeatherHelper.cs" />
+    <Compile Include="Services\WeatherHelper.cs" />
     <Compile Include="Messages\WeatherDataRetrievedMessage.cs" />
     <Compile Include="Models\AirQuality.cs" />
     <Compile Include="Models\AsthmaTrackerDataContext.cs" />
@@ -98,6 +100,7 @@
     <Compile Include="ViewModels\AddViewModel.cs" />
     <Compile Include="ViewModels\GraphViewModel.cs" />
     <Compile Include="ViewModels\HistoryViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\SettingsViewModel.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />

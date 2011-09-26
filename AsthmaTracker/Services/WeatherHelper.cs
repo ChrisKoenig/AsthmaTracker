@@ -10,11 +10,11 @@ using GalaSoft.MvvmLight.Messaging;
 using GalaSoft.MvvmLight.Threading;
 using Microsoft.Phone.Net.NetworkInformation;
 
-namespace AsthmaTracker.Helpers
+namespace AsthmaTracker.Services
 {
-    public class WeatherHelper
+    public class WeatherService : IWeatherService
     {
-        private static void LoadWeather(double latitude, double longitude)
+        public void LoadWeather(double latitude, double longitude)
         {
             //check if network and client are available and newsurl exists
             if (!NetworkInterface.GetIsNetworkAvailable())
@@ -89,10 +89,6 @@ namespace AsthmaTracker.Helpers
                         WeatherData = forecast
                     });
             }, null);
-        }
-
-        private void LoadWeatherCompleted(string results)
-        {
         }
     }
 }
